@@ -1,0 +1,12 @@
+App(
+    appid="lora_test",
+    name="LoRa Test",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="lora_app",
+    cdefines=["APP_LORA_TEST"],
+    requires=[
+        "gui",
+    ],
+    stack_size=2 * 1024,
+    order=20,
+)
